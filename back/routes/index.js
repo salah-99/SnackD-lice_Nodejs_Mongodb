@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const connectionString = "mongodb+srv://yaibi012:NEVERgiveUP@cluster0.lboed.mongodb.net/mcdoland?retryWrites=true&w=majority"
+const connectionString = "mongodb+srv://salah:salh@cluster0.lboed.mongodb.net/mcdoland?retryWrites=true&w=majority"
 
 const MongoClient = require('mongodb').MongoClient
 
