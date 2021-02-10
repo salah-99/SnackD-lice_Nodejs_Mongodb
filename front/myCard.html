@@ -15,53 +15,25 @@
 
 <body>
 
-    <section class="Mnavbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 container">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">TOUS <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mix.html">MIX</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sandwich.html">NOS SANDWICHS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="salade.html">SALADE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="boisson.html">BOISSON</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-
     <section class="card-items">
         <div class="contents container">
             <div id="myCard">
 
             </div>
 
-            <form class="form-inline">
-                <div class="form-group mb-2" style="display: -webkit-inline-box;">
-                    <label for="codeNumber" style="margin-right: 50px;">code promo</label>
-                    <div id="CodeAppliquer"></div>
-                    <input type="text" class="form-control-plaintext" id="codeNumber" value="tapez votre code"
-                        style="padding: 0% 5%; width: 60%;">
-                </div>
-                <button type="button" class="btn btn-primary mb-2" onclick="codePromo()" id="apliquerCodeP">appliquer</button>
-            </form>
-
             <p id="prixTotal" class="PT"></p>
-            <button type="button" class="btn btn-warning passCommande" data-toggle="modal"
-                data-target="#exampleModal">passer votre commande</button>
+            <button style="color: blueviolet;" type="button" class="btn passCommande" data-toggle="modal"
+                data-target="#exampleModal">commander</button>
+
+                <form class="form-inline">
+                    <div class="form-group mb-2" style="display: -webkit-inline-box;">
+                        <label for="codeNumber" style="margin-right: 50px;">code promo</label>
+                        <div id="CodeAppliquer"></div>
+                        <input type="text" class="form-control-plaintext" id="codeNumber" value="tapez votre code"
+                            style="padding: 0% 5%; width: 60%;">
+                    </div>
+                    <button type="button" class="btn btn-primary mb-2" onclick="codePromo()" id="apliquerCodeP">appliquer</button>
+                </form>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -83,7 +55,7 @@
 
     <section class="items-list">
         <div class="content">
-            <a href="myCard.html"><i class="fas fa-shopping-bag" style="color: orangered;"></i></a>
+            <a href="myCard.html"><i class="fas fa-shopping-bag" style="color: black;"></i></a>
         </div>
     </section>
 
